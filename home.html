@@ -8,7 +8,6 @@
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
-                overflow-x: hidden;
             }
             .header{
                 display: flex;
@@ -17,14 +16,19 @@
                 padding: 20px;
                 background-color: red;
             }
+            .header-links{
+                display: flex;
+                align-items: center;
+            }
+            .header-links > *{
+                margin-right: 20px;
+            }
             .menu{
-                font-weight: bold;
-                margin-right: 50px;
-                position: relative;
                 font-size: 16px;
                 border: none;
                 background-color: transparent;
                 cursor: pointer;
+                font-family: 'Times New Roman', Times, serif;
             }
             .search-container{
                 display: flex;
@@ -44,6 +48,26 @@
                 position: relative;
                 display: inline-block;
             }
+            .sell-book{
+                position: relative;
+                right: 350px;
+            }
+            .sell-booka{
+                color: black;
+                text-decoration: none;
+            }
+            .contact-us{
+                position: relative;
+                right: 675px;
+            }
+            .contact-usa{
+                color: black;
+                text-decoration: none;
+            }
+            .home{
+                color: black;
+                text-decoration: none;
+            }
             .drpbtn{
                 display: none;
                 position: absolute;
@@ -51,8 +75,8 @@
                 min-width: 130px;
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                 z-index: 1;
-                right: 0;
-                top: 100%;
+                top: calc(100% + 10px);
+                left: 0;
             }
             .drpbtn a{
                 color: black;
@@ -83,14 +107,18 @@
                 margin-top: 10px;
                 text-align: center;
             }
-            .sell-book{
-                margin-right: 20px;
+            
+            .gallery a{
+                color: black;
+                text-decoration: none;
             }
         </style>
     </head>
     <body>
         <header class="header">
-            <div class="drop">
+            <div class="header-links">
+                <a href="home.html" class="home"><p class="home">Home</p></a>
+                <div class="drop">
                 <button class="menu">Categories</button>
                 <div class="drpbtn">
                     <a href="art_photography.html">Art & Photography</a>
@@ -108,8 +136,9 @@
                     <a href="thriller.html">Thriller</a>
                 </div>
             </div>
-            <a href=""><p class="sell-book">Sell a book</p></a>
-            <p>Contact Us</p>
+            </div>
+            <a href="sell-book.html" class="sell-booka"><p class="sell-book">Sell a book</p></a>
+            <a href="" class="contact-usa"><p class="contact-us">Contact Us</p></a>
             <div class="search-container">
                 <i class="fas fa-shopping-cart cart-icon"></i>
                 <i class="fas fa-user profile-icon"></i>
