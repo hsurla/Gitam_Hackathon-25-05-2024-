@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home</title>
+        <title>Art & Photography</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <style>
             body{
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
-                overflow-x: hidden;
             }
             .header{
                 display: flex;
@@ -24,7 +23,6 @@
                 font-size: 16px;
                 border: none;
                 background-color: transparent;
-                cursor: pointer;
             }
             .search-container{
                 display: flex;
@@ -52,7 +50,6 @@
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                 z-index: 1;
                 right: 0;
-                top: 100%;
             }
             .drpbtn a{
                 color: black;
@@ -70,7 +67,10 @@
                 padding: 20px;
             }
             .gallery-item{
-                margin-bottom: 20px;
+                width: calc(25% - 40px);
+                margin: 10px;
+                box-sizing: border-box;
+                text-align: center;
             }
             .gallery-item img{
                 width: 200px;
@@ -79,12 +79,12 @@
                 border: 1px solid #ddd;
                 border-radius: 5px;
             }
-            .book-info{
-                margin-top: 10px;
-                text-align: center;
+            .gallery a{
+                color: black;
+                text-decoration: none;
             }
-            .sell-book{
-                margin-right: 20px;
+            .gallery a:hover {
+                color: darkblue;
             }
         </style>
     </head>
@@ -108,57 +108,66 @@
                     <a href="thriller.html">Thriller</a>
                 </div>
             </div>
-            <a href=""><p class="sell-book">Sell a book</p></a>
-            <p>Contact Us</p>
             <div class="search-container">
                 <i class="fas fa-shopping-cart cart-icon"></i>
                 <i class="fas fa-user profile-icon"></i>
             </div>
         </header>
-        <h1 class="top-selling">Best Seller</h1>
         <div class="gallery">
             <div class="gallery-item">
-                <a href=""><img src="images/atomic_habits.jpg" alt="Product 1">
+                <a href=""><img src="images/bharata natyam.jpg" alt="Product 1">
                     <div class="book-info">
-                        <p><b>Atomic Habits</b></p>
-                        <p>James Clear</p>
+                        <p><b>Bharata Natyam in Cultural Perspective</b></p>
+                        <p>Kliger, George</p>
+                        <p>1,650/-</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href=""><img src="images/monet by himself.jpg" alt="Product 1">
+                    <div class="book-info">
+                        <p><b>Monet By Himself</b></p>
+                        <p>Monet, Claude|Kendall, Richard</p>
                         <p>899/-</p>
                     </div>
                 </a>
             </div>
             <div class="gallery-item">
-                <a href=""><img src="images/doglapan.jpg" alt="Product 2">
+                <a href=""><img src="images/performing silence.jpg" alt="Product 1">
                     <div class="book-info">
-                        <p><b>Doglapan</b></p>
-                        <p>Ashneer Grover</p>
-                        <p>499/-</p>
-                    </div></a>
+                        <p><b>Performing Silence; Women in the Group Theatre Movement in Bengal</b></p>
+                        <p>Nileena Banerjee</p>
+                        <p>1,795/-</p>
+                    </div>
+                </a>
             </div>
             <div class="gallery-item">
-                <a href=""><img src="images/ikigai.jpg" alt="Product 3">
+                <a href=""><img src="images/staging at the end of the world.jpg" alt="Product 1">
                     <div class="book-info">
-                        <p><b>Ikigai</b></p>
-                        <p>Francesc Miralles</p>
-                        <p>550/-</p>
-                    </div></a>
+                        <p><b>Staging the End of the World: Theatre in a Time of Climate Crisis</b></p>
+                        <p>Kulick, Brian</p>
+                        <p>995/-</p>
+                    </div>
+                </a>
             </div>
             <div class="gallery-item">
-                <a href=""><img src="images/it_ends_with_us.jpg" alt="Product 4">
+                <a href=""><img src="images/wide angle.jpg" alt="Product 1">
                     <div class="book-info">
-                        <p><b>It Ends with Us</b></p>
-                        <p>Colleen Hoover</p>
-                        <p>495/-</p>
-                    </div></a>
+                        <p><b>Wide Angle: National Geographic Greatest Places</b></p>
+                        <p>National Geographic Society</p>
+                        <p>2,860/-</p>
+                    </div>
+                </a>
             </div>
             <div class="gallery-item">
-                <a href=""><img src="images/psychology_of_money.jpg" alt="Product 5">
+                <a href=""><img src="images/the methun book.jpg" alt="Product 1">
                     <div class="book-info">
-                        <p><b>The Psychology of Money</b></p>
-                        <p>Morgan Housel</p>
-                        <p>396/-</p>
-                    </div></a>
+                        <p><b>The Methuen Book of Comic Monologues for Women: Volume One</b></p>
+                        <p>Wix, Katy</p>
+                        <p>1,306/-</p>
+                    </div>
+                </a>
             </div>
         </div>
-        <h1 class="best-recommended">Best Recommended</h1>
     </body>
 </html>

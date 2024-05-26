@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sell Book</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: red;
+        }
+        .menu{
+                font-weight: bold;
+                margin-right: 50px;
+                position: relative;
+                font-size: 16px;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+            .search-container{
+                display: flex;
+                align-items: center;
+            }
+            .profile-icon,
+            .cart-icon{
+                font-size: 40px;
+            }
+            .cart-icon{
+                margin-right: 30px;
+            }
+            .profile-icon{
+                margin-right: 20px;
+            }
+            .drop{
+                position: relative;
+                display: inline-block;
+            }
+            .drpbtn{
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 130px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+                right: 0;
+                top: 100%;
+            }
+            .drpbtn a{
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            .drpbtn a:hover{background-color: #ddd;}
+            .drop:hover .drpbtn{display: block;}
+            .drop:hover .menu{background-color: transparent;}
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="drop">
+            <button class="menu">Categories</button>
+            <div class="drpbtn">
+                <a href="art_photography.html">Art & Photography</a>
+                <a href="biographies.html">Biographies</a>
+                <a href="literature.html">Literature</a>
+                <a href="fiction.html">Fiction</a>
+                <a href="encyclopedias.html">Encyclopedias</a>
+                <a href="his&hum.html">History & Humanities</a>
+                <a href="social_sciences.html">Social Sciences</a>
+                <a href="buss&eco.html">Business & Economics</a>
+                <a href="law.html">Law</a>
+                <a href="medicine.html">Medicine</a>
+                <a href="sci&math.html">Science & Mathematics</a>
+                <a href="tech&engg.html">Technology & Engineering</a>
+                <a href="thriller.html">Thriller</a>
+            </div>
+        </div>
+        <a href=""><p class="sell-book">Sell a book</p></a>
+        <p>Contact Us</p>
+        <div class="search-container">
+            <i class="fas fa-shopping-cart cart-icon"></i>
+            <i class="fas fa-user profile-icon"></i>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Sell a Book</h2>
+        <form>
+            <div class="form-group">
+                <label for="title">Title of the Book:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" required>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="art_photography">Art & Photography</option>
+                    <option value="biographies">Biographies</option>
+                    <option value="literature">Literature</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="encyclopedias">Encyclopedias</option>
+                    <option value="history_humanities">History & Humanities</option>
+                    <option value="social_sciences">Social Sciences</option>
+                    <option value="business_economics">Business & Economics</option>
+                    <option value="law">Law</option>
+                    <option value="medicine">Medicine</option>
+                    <option value="science_mathematics">Science & Mathematics</option>
+                    <option value="technology_engineering">Technology & Engineering</option>
+                    <option value="thriller">Thriller</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Add Book</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

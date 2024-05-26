@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home</title>
+        <title>Biographies</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <style>
             body{
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
-                overflow-x: hidden;
             }
             .header{
                 display: flex;
@@ -24,7 +23,6 @@
                 font-size: 16px;
                 border: none;
                 background-color: transparent;
-                cursor: pointer;
             }
             .search-container{
                 display: flex;
@@ -52,7 +50,6 @@
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                 z-index: 1;
                 right: 0;
-                top: 100%;
             }
             .drpbtn a{
                 color: black;
@@ -70,7 +67,10 @@
                 padding: 20px;
             }
             .gallery-item{
-                margin-bottom: 20px;
+                width: calc(25% - 40px);
+                margin: 10px;
+                box-sizing: border-box;
+                text-align: center;
             }
             .gallery-item img{
                 width: 200px;
@@ -79,12 +79,12 @@
                 border: 1px solid #ddd;
                 border-radius: 5px;
             }
-            .book-info{
-                margin-top: 10px;
-                text-align: center;
+            .gallery a{
+                color: black;
+                text-decoration: none;
             }
-            .sell-book{
-                margin-right: 20px;
+            .gallery a:hover {
+                color: darkblue;
             }
         </style>
     </head>
@@ -108,57 +108,84 @@
                     <a href="thriller.html">Thriller</a>
                 </div>
             </div>
-            <a href=""><p class="sell-book">Sell a book</p></a>
-            <p>Contact Us</p>
             <div class="search-container">
                 <i class="fas fa-shopping-cart cart-icon"></i>
                 <i class="fas fa-user profile-icon"></i>
             </div>
         </header>
-        <h1 class="top-selling">Best Seller</h1>
         <div class="gallery">
             <div class="gallery-item">
-                <a href=""><img src="images/atomic_habits.jpg" alt="Product 1">
+                <a href=""><img src="images/ambedkar & modi.jpg" alt="Product 1">
                     <div class="book-info">
-                        <p><b>Atomic Habits</b></p>
-                        <p>James Clear</p>
+                        <p><b>Ambedkar & Modi</b></p>
+                        <p>BlueKraft Digital Foundation</p>
+                        <p>295/-</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href=""><img src="images/bharat ke warren buffet.jpg" alt="Product 1">
+                    <div class="book-info">
+                        <p><b>Bharat Ke Warren Buffett Rakesh Jhunjhunwala</b></p>
+                        <p>Mahesh Dutt Sharma</p>
+                        <p>300/-</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href=""><img src="images/irrfan.jpg" alt="Product 1">
+                    <div class="book-info">
+                        <p><b>Irrfan: Dialogues with the Wind</b></p>
+                        <p>Anup Singh|Amitabh Bachchan</p>
+                        <p>699/-</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href=""><img src="images/lion of the skies.jpg" alt="Product 1">
+                    <div class="book-info">
+                        <p><b>Lion of the Skies: Hardit Singh</b></p>
+                        <p>Barker, Stephen</p>
+                        <p>599/-</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href=""><img src="images/mkg.jpg" alt="Product 1">
+                    <div class="book-info">
+                        <p><b>M. K. Gandhi an Autobiography - The Story of My Experiments with Truth</b></p>
+                        <p>M. K. Gandhi</p>
+                        <p>265/-</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href=""><img src="images/tiger of drass.jpg" alt="Product 1">
+                    <div class="book-info">
+                        <p><b>Tiger of Drass: Capt. Anuj Nayyar, 23, Kargil Hero</b></p>
+                        <p>Nayyar,Meena|Shekhawat,Himmat Singh</p>
+                        <p>299/-</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href=""><img src="images/vajpayee.jpg" alt="Product 1">
+                    <div class="book-info">
+                        <p><b>Vajpayee: The Ascent of the Hindu Right, 1924-1977</b></p>
+                        <p>Abhishek Choudhary</p>
                         <p>899/-</p>
                     </div>
                 </a>
             </div>
             <div class="gallery-item">
-                <a href=""><img src="images/doglapan.jpg" alt="Product 2">
+                <a href=""><img src="images/samurai dream.jpg" alt="Product 1">
                     <div class="book-info">
-                        <p><b>Doglapan</b></p>
-                        <p>Ashneer Grover</p>
-                        <p>499/-</p>
-                    </div></a>
-            </div>
-            <div class="gallery-item">
-                <a href=""><img src="images/ikigai.jpg" alt="Product 3">
-                    <div class="book-info">
-                        <p><b>Ikigai</b></p>
-                        <p>Francesc Miralles</p>
-                        <p>550/-</p>
-                    </div></a>
-            </div>
-            <div class="gallery-item">
-                <a href=""><img src="images/it_ends_with_us.jpg" alt="Product 4">
-                    <div class="book-info">
-                        <p><b>It Ends with Us</b></p>
-                        <p>Colleen Hoover</p>
-                        <p>495/-</p>
-                    </div></a>
-            </div>
-            <div class="gallery-item">
-                <a href=""><img src="images/psychology_of_money.jpg" alt="Product 5">
-                    <div class="book-info">
-                        <p><b>The Psychology of Money</b></p>
-                        <p>Morgan Housel</p>
-                        <p>396/-</p>
-                    </div></a>
+                        <p><b>A Samurai Dream of Azad Hind: Rassh Behari Bose</b></p>
+                        <p>Prasun Roy</p>
+                        <p>595/-</p>
+                    </div>
+                </a>
             </div>
         </div>
-        <h1 class="best-recommended">Best Recommended</h1>
     </body>
 </html>
